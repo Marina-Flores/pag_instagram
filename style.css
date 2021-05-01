@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img {
+  height: 50rem;
+}
+
+.instagram-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.group:nth-child(2) {
+    margin-top: 10px;
+  }
+
+.instagram-logo {
+  height: 4rem;
+}
+
+form {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+fieldset {
+  border: 0;
+}
+
+.input-class {
+  padding: 5px;
+  width: 250px;
+  border: 1px solid #6db5f1;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  margin: 10px auto;
+  display: block;
+}
+
+.input-class:focus {
+  box-shadow: 0 0 5px #6db5f1;
+  width: 250px;
+}
+
+.input-class::-webkit-input-placeholder {
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-style: italic;
+  font-size: 12px;
+}
+
+.campo {
+  margin-bottom: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="password"] {
+  padding: 0.2em;
+  border: 1px solid #dad8df;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: block;
+  height: 30px;
+}
+.bt {
+  border: 1px solid #8ab6d3;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 6px 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 64%;
+}
+
+.bt-lj {
+  border-color: #0095f6;
+  background: linear-gradient(to bottom, #0095f6 5%, #0095f6 100%);
+  box-shadow: inset 0px 1px 0px 0px #0095f6;
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #0095f6;
+}
+
+.bt-lj:hover {
+  background: linear-gradient(to bottom, #0095f6 5%, #50effa 100%);
+}
+.bt:active {
+  position: relative;
+  top: 2px;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link {
+  color: #0095f6;
+}
+
+.link-facebook {
+  color: #385185;
+}
+
+.link-senha {
+  color: #00376b;
+  font-size: 11px;
+}
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url("./img/appStore.png");
+}
+
+.app-download:nth-child(2) {
+  background-image: url("./img/googlePlay.png");
+}
+
+.ou {
+  color: #8e8e8e;
+  color: rgba(var(---f52, 142, 142, 142), 1);
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0 18px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-continue {
+    width: 100%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+}
